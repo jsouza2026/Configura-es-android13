@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Configurações Android</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrir Configurações Android</title>
 
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding: 30px 15px;
-        background: #f2f2f2;
-    }
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px 15px;
+            background: #f2f2f2;
+        }
 
-    button {
-        width: 90%;
-        max-width: 350px;
-        padding: 20px;
-        font-size: 20px;
-        border: none;
-        border-radius: 12px;
-        background: #4285f4;
-        color: white;
-        font-weight: bold;
-    }
-</style>
+        h2 {
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 90%;
+            max-width: 350px;
+            padding: 20px;
+            margin-top: 25px;
+            border: none;
+            border-radius: 12px;
+            background: #1976d2;
+            color: white;
+            font-size: 19px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
 
-<h2>Motorola Moto E13</h2>
-<p>Android 13</p>
+<h2>Teste Android</h2>
 
-<button onclick="abrirConfiguracoes()">
-    ⚙️ Abrir Configurações
-</button>
+<p>Toque no botão abaixo:</p>
 
-<script>
-
-function abrirConfiguracoes() {
-
-    window.location.href =
-        "intent://settings#Intent;" +
-        "action=android.settings.SETTINGS;" +
-        "category=android.intent.category.DEFAULT;" +
-        "end";
-
-}
-
-</script>
+<a href="intent://com.android.settings.slices/?slice=content%3A%2F%2Fcom.android.settings.slices%2Fintent%2Fteste#Intent;scheme=settings;package=com.android.settings;end">
+    <button>
+        ⚙️ ABRIR CONFIGURAÇÕES
+    </button>
+</a>
 
 </body>
 </html>
